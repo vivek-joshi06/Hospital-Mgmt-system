@@ -1,0 +1,90 @@
+# ==========================================
+# Visual Studio / .NET Build Artifacts
+# ==========================================
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+*.pidb
+*.booproj
+*.svclog
+*.cache
+
+# NuGet Packages
+*.nupkg
+**/packages/
+**/project.assets.json
+**/project.nuget.cache
+
+# Entity Framework / SQL Server Local Database
+*.mdf
+*.ldf
+*.db
+*.sqlite
+
+# User / Local Settings
+[Aa]ppsettings.*.local.json
+**/appsettings.Development.json
+
+# Archive / Zip files
+*.zip
+*.7z
+*.rar
+
+# ==========================================
+# Node.js / React / Vite Frontend
+# ==========================================
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/build/
+.output/
+
+# Logs & Debug
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Diagnostic / Lint tool caches
+.oxlintrc_cache
+.eslintcache
+.stylelintcache
+
+# ==========================================
+# Operating System & Editors
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor Specific
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*~
