@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\sem 5\\.net\\Hospital_management_system\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital_management_system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital_management_system\\validator\\doctorvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:validator\\doctorvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital_management_system\\controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:controllers\\statuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital_management_system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital_management_system\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital_management_system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital_management_system\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital_management_system\\validator\\patientvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:validator\\patientvalidators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorValidators.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital_management_system\\Validator\\DoctorValidators.cs",
+              "RelativeDocumentMoniker": "Validator\\DoctorValidators.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital_management_system\\Validator\\DoctorValidators.cs*",
+              "RelativeToolTip": "Validator\\DoctorValidators.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T05:30:58.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAiwJ8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T05:21:31.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StatusController.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\StatusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StatusController.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\StatusController.cs",
+              "RelativeToolTip": "Controllers\\StatusController.cs",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAYwOAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T05:20:45.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Controllers\\PatientController.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAYwM8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T05:20:22.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAD4v88AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-19T05:08:19.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Controllers\\DoctorController.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAYwOcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:32:01.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital_management_system\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAYwP0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T07:10:34.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "patientValidators.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital_management_system\\Validator\\patientValidators.cs",
+              "RelativeDocumentMoniker": "Validator\\patientValidators.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital_management_system\\Validator\\patientValidators.cs",
+              "RelativeToolTip": "Validator\\patientValidators.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-17T05:16:32.776Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

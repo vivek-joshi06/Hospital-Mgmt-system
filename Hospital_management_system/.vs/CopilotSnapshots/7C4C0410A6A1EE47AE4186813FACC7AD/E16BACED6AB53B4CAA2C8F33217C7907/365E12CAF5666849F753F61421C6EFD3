@@ -1,0 +1,19 @@
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+
+namespace Hospital_management_system.Model
+{
+    public class user
+    {
+        public int UserID { get; set; }
+
+        public string UserName { get; set; }
+        public string Password { get; set; }
+        public string Email {  get; set; }
+        public string MobileNo { get; set; }
+        public Boolean IsActive {  get; set; }
+        public DateTime Created {  get; set; }
+        public string Role { get; set; }
+        public DateTime Modified {  get; set; }
+
+    }
+}

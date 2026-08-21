@@ -1,0 +1,29 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Hospital_management_system.Model
+{
+    public class doctor
+    {
+        [Key]
+        public int DoctorID  { get; set;  }
+     
+        public string Name { get; set; }
+        [Required]
+        public string Phone { get; set; }
+        [Required]
+        public string Email { get; set; }
+        [Required]
+        public string Qualification { get; set; }
+        [Required]
+        public string Specialization { get; set; }
+        [Required]
+        public string IsActive { get; set; } = true;
+        [Required]
+        public DateTime Created { get; set; } = DateTime.Now;
+        [Required]
+        public DateTime Modified { get; set; }
+        [Required]
+        public int UserID { get; set; }
+
+    }
+}

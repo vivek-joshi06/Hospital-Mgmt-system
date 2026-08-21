@@ -1,0 +1,132 @@
+﻿using HMS_Backend.Models;
+using HMS_Backend.Data;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace HMS_Backend.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CountController : ControllerBase
+    {
+        private readonly AppDbContext _context;
+
+        public CountController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        /// <summary>
+        /// Get total number of patients registered in the system
+        /// </summary>
+        [HttpGet("patients")]
+        public async Task<IActionResult> GetTotalPatients()
+        {
+            try
+            {
+                var totalPatients = await _context.Patients.CountAsync();
+                return Ok(new { total = totalPatients, message = "Total patients count" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Get total number of doctors registered in the system
+        /// </summary>
+        [HttpGet("doctors")]
+        public async Task<IActionResult> GetTotalDoctors()
+        {
+            try
+            {
+                var totalDoctors = await _context.Doctors.CountAsync();
+                return Ok(new { total = totalDoctors, message = "Total doctors count" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Get total number of appointments in the system
+        /// </summary>
+        [HttpGet("appointments")]
+        public async Task<IActionResult> GetTotalAppointments()
+        {
+            try
+            {
+                var totalAppointments = await _context.Appointments.CountAsync();
+                return Ok(new { total = totalAppointments, message = "Total appointments count" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Get total number of departments in the system
+        /// </summary>
+        [HttpGet("departments")]
+        public async Task<IActionResult> GetTotalDepartments()
+        {
+            try
+            {
+                var totalDepartments = await _context.Departments.CountAsync();
+                return Ok(new { total = totalDepartments, message = "Total departments count" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Get total number of active users in the system
+        /// </summary>
+        [HttpGet("users/active")]
+        public async Task<IActionResult> GetTotalActiveUsers()
+        {
+            try
+            {
+                var totalActiveUsers = await _context.Users.Where(u => u.IsActive).CountAsync();
+                return Ok(new { total = totalActiveUsers, message = "Total active users count" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        /// <summary>
+        /// Get all counts in a single dashboard statistics response
+        /// </summary>
+        [HttpGet("dashboard")]
+        public async Task<IActionResult> GetDashboardStatistics()
+        {
+            try
+            {
+                var statistics = new
+                {
+                    totalPatients = await _context.Patients.CountAsync(),
+                    totalDoctors = await _context.Doctors.CountAsync(),
+                    totalAppointments = await _context.Appointments.CountAsync(),
+                    totalDepartments = await _context.Departments.CountAsync(),
+                    totalActiveUsers = await _context.Users.Where(u => u.IsActive).CountAsync(),
+                    appointmentsToday = await _context.Appointments.Where(a => a.AppointmentDate.Date == DateTime.Now.Date).CountAsync(),
+                    activePatients = await _context.Patients.Where(p => p.IsActive).CountAsync(),
+                    activeDoctors = await _context.Doctors.Where(d => d.IsActive).CountAsync()
+                };
+
+                return Ok(statistics);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+    }
+}

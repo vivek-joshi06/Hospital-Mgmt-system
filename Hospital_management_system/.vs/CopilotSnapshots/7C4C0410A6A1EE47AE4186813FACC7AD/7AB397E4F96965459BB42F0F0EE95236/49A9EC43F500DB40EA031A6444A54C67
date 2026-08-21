@@ -1,0 +1,10 @@
+﻿//1) Display the total number of patients registered in the system.
+
+namespace Hospital_management_system.Controllers
+{
+    public class countController : ControllerBase
+    {
+        public countController() {
+            
+    }
+}
