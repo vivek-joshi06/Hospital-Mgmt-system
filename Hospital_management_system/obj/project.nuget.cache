@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JiA8YsOojPo=",
+  "dgSpecHash": "Sh1TxPf4B6k=",
   "success": true,
-  "projectFilePath": "C:\\sem 5\\.net\\Hospital_management_system\\Hospital_management_system.csproj",
+  "projectFilePath": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Hospital_management_system.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vivek\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\vivek\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

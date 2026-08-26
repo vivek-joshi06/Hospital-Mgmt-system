@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\sem 5\\.net\\Hospital_management_system\\Hospital_management_system.csproj": {}
+    "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Hospital_management_system.csproj": {}
   },
   "projects": {
-    "C:\\sem 5\\.net\\Hospital_management_system\\Hospital_management_system.csproj": {
+    "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Hospital_management_system.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\sem 5\\.net\\Hospital_management_system\\Hospital_management_system.csproj",
+        "projectUniqueName": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Hospital_management_system.csproj",
         "projectName": "Hospital_management_system",
-        "projectPath": "C:\\sem 5\\.net\\Hospital_management_system\\Hospital_management_system.csproj",
+        "projectPath": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Hospital_management_system.csproj",
         "packagesPath": "C:\\Users\\vivek\\.nuget\\packages\\",
-        "outputPath": "C:\\sem 5\\.net\\Hospital_management_system\\obj\\",
+        "outputPath": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

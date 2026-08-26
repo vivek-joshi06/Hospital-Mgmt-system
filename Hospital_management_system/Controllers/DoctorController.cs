@@ -88,10 +88,11 @@ namespace HMS_Backend.Controllers
                 {
                     return BadRequest(result.Errors.Select(x => x.ErrorMessage));
                 }
+
                 if (dto == null)
-            {
+                {
                 return BadRequest("Invalid JSON");
-            }
+                }
 
             var userExists = _context.Users.Any(u => u.UserID == dto.UserID);
             if (!userExists)
