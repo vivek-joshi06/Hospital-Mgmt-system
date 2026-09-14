@@ -2,19 +2,24 @@ using HMS_Backend.Common;
 using HMS_Backend.Data;
 using HMS_Backend.DTOs;
 using HMS_Backend.Models;
+using HMS_Backend.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HMS_Backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly TokenService _tokenService;
 
-        public UserController(AppDbContext context)
+        public UserController(AppDbContext context, TokenService tokenService)
         {
             _context = context;
+            _tokenService = tokenService;
         }
 
         // GET: api/User
@@ -153,7 +158,7 @@ namespace HMS_Backend.Controllers
                 }
 
                 existingUser.UserName = dto.UserName;
-                existingUser.Password = dto.Password;
+                existingUser.Password = string.IsNullOrEmpty(dto.Password) ? existingUser.Password : dto.Password;
                 existingUser.Email = dto.Email;
                 existingUser.MobileNo = dto.MobileNo;
                 existingUser.IsActive = dto.IsActive;
@@ -227,6 +232,7 @@ namespace HMS_Backend.Controllers
         }
 
         // POST: api/User/login
+        [AllowAnonymous]
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginDto dto)
         {
@@ -242,9 +248,9 @@ namespace HMS_Backend.Controllers
                 }
 
                 var user = _context.Users.FirstOrDefault(u =>
-                    u.UserName.ToLower() == dto.UserName.ToLower() &&
+                    (u.UserName.ToLower() == dto.UserName.ToLower() || u.Email.ToLower() == dto.UserName.ToLower()) &&
                     u.Password == dto.Password &&
-                    u.Role.ToLower() == dto.Role.ToLower());
+                    (string.IsNullOrEmpty(dto.Role) || u.Role.ToLower() == dto.Role.ToLower()));
 
                 if (user == null)
                 {
@@ -264,11 +270,20 @@ namespace HMS_Backend.Controllers
                     });
                 }
 
-                return Ok(new ApiResponse<User>
+                var token = _tokenService.GenerateToken(user);
+
+                return Ok(new ApiResponse<object>
                 {
                     Success = true,
                     Message = "Login successful.",
-                    Data = user
+                    Data = new LoginResponseDto
+                    {
+                        Token = token,
+                        UserID = user.UserID,
+                        UserName = user.UserName,
+                        Email = user.Email,
+                        Role = user.Role
+                    }
                 });
             }
             catch (Exception ex)
@@ -283,6 +298,7 @@ namespace HMS_Backend.Controllers
         }
 
         // POST: api/User/register
+        [AllowAnonymous]
         [HttpPost("register")]
         public IActionResult Register([FromBody] RegisterDto dto)
         {

@@ -1646,11 +1646,6 @@
         }
       },
       "LoginDto": {
-        "required": [
-          "userName",
-          "password",
-          "role"
-        ],
         "type": "object",
         "properties": {
           "userName": {
@@ -1771,21 +1766,12 @@
         }
       },
       "RegisterDto": {
-        "required": [
-          "userName",
-          "password",
-          "email",
-          "mobileNo",
-          "role"
-        ],
         "type": "object",
         "properties": {
           "userName": {
             "type": "string"
           },
           "password": {
-            "maxLength": 100,
-            "minLength": 6,
             "type": "string"
           },
           "email": {
@@ -1886,23 +1872,12 @@
         }
       },
       "UserCreateDto": {
-        "required": [
-          "userName",
-          "password",
-          "email",
-          "mobileNo",
-          "role"
-        ],
         "type": "object",
         "properties": {
           "userName": {
-            "maxLength": 50,
-            "minLength": 0,
             "type": "string"
           },
           "password": {
-            "maxLength": 100,
-            "minLength": 6,
             "type": "string"
           },
           "email": {
@@ -1920,22 +1895,12 @@
         }
       },
       "UserUpdateDto": {
-        "required": [
-          "userName",
-          "email",
-          "mobileNo",
-          "role"
-        ],
         "type": "object",
         "properties": {
           "userName": {
-            "maxLength": 50,
-            "minLength": 0,
             "type": "string"
           },
           "password": {
-            "maxLength": 100,
-            "minLength": 6,
             "type": [
               "null",
               "string"

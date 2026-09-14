@@ -68,7 +68,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 107,
+          "DockedHeight": 106,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -81,8 +81,7 @@
               "RelativeToolTip": "..\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T05:29:43.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-07T05:29:43.915Z"
             },
             {
               "$type": "Document",
@@ -92,7 +91,7 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-09-07T05:24:19.997Z",
               "EditorCaption": ""
@@ -107,8 +106,7 @@
               "RelativeToolTip": "DTO\\UserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T05:22:35.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-07T05:22:35.697Z"
             },
             {
               "$type": "Document",
@@ -120,8 +118,7 @@
               "RelativeToolTip": "Model\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T05:20:39.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-07T05:20:39.208Z"
             },
             {
               "$type": "Document",
@@ -133,8 +130,7 @@
               "RelativeToolTip": "Common\\ApiResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T05:39:38.508Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T05:39:38.508Z"
             },
             {
               "$type": "Document",
@@ -146,8 +142,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAACYAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T03:35:10.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-26T03:35:10.749Z"
             },
             {
               "$type": "Document",
@@ -207,8 +202,7 @@
               "RelativeToolTip": "Model\\Doctor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T03:38:18.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-24T03:38:18.65Z"
             },
             {
               "$type": "Document",
@@ -261,7 +255,7 @@
           ]
         },
         {
-          "DockedHeight": 6,
+          "DockedHeight": 7,
           "SelectedChildIndex": -1,
           "Children": [
             {
