@@ -29,6 +29,7 @@ namespace HMS_Backend.DTOs
         public string Email { get; set; } = string.Empty;
         public string MobileNo { get; set; } = string.Empty;
         public string Role { get; set; } = string.Empty;
+        public string Department { get; set; } = string.Empty;
         public bool IsActive { get; set; } = true;
     }
 
@@ -39,6 +40,7 @@ namespace HMS_Backend.DTOs
         public string Email { get; set; } = string.Empty;
         public string MobileNo { get; set; } = string.Empty;
         public string Role { get; set; } = string.Empty;
+        public string Department { get; set; } = string.Empty;
         public bool IsActive { get; set; }
     }
 

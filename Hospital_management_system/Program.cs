@@ -77,6 +77,16 @@ namespace Hospital_management_system
                 });
             });
 
+            // Configure Policy-Based Authorization
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminAccount", policy =>
+                {
+                    policy.RequireRole("Admin")
+                          .RequireClaim("Department", "Account");
+                });
+            });
+
             // Register TokenService
             builder.Services.AddScoped<TokenService>();
 

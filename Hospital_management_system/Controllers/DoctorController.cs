@@ -3,12 +3,14 @@ using HMS_Backend.Common;
 using HMS_Backend.Data;
 using HMS_Backend.DTOs;
 using HMS_Backend.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HMS_Backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class DoctorController : ControllerBase
     {
 

@@ -43,7 +43,41 @@ namespace HMS_Backend.Controllers
             });
         }
 
-        // GET: api/User/1
+        // GET: api/User/admin-only
+        [Authorize(Roles = "Admin")]
+        [HttpGet("admin-only")]
+        public IActionResult GetAllForAdmin()
+        {
+            var users = _context.Users.ToList();
+            return Ok(new ApiResponse<IEnumerable<UserGetAllDto>>
+            {
+                Success = true,
+                Message = "Admin: All Users Retrieved Successfully",
+                Data = users.Select(u => new UserGetAllDto
+                {
+                    UserID = u.UserID,
+                    UserName = u.UserName,
+                    Email = u.Email,
+                    MobileNo = u.MobileNo,
+                    Role = u.Role,
+                    IsActive = u.IsActive
+                })
+            });
+        }
+
+        // GET
+        [Authorize(Policy = "AdminAccount")]
+        [HttpGet("admin-account")]
+        public IActionResult AdminAccountOnly()
+        {
+            return Ok(new ApiResponse<object>
+            {
+                Success = true,
+                Message = "Visible only to Admins with Account Department"
+            });
+        }
+
+        // GET
         [HttpGet("{id:int}")]
         public IActionResult GetByID(int id)
         {
@@ -105,6 +139,7 @@ namespace HMS_Backend.Controllers
                     Email = dto.Email,
                     MobileNo = dto.MobileNo,
                     Role = dto.Role,
+                    Department = dto.Department,
                     IsActive = dto.IsActive,
                     Created = DateTime.Now,
                     Modified = DateTime.Now
@@ -163,6 +198,7 @@ namespace HMS_Backend.Controllers
                 existingUser.MobileNo = dto.MobileNo;
                 existingUser.IsActive = dto.IsActive;
                 existingUser.Role = dto.Role;
+                existingUser.Department = dto.Department;
                 existingUser.Modified = DateTime.Now;
 
                 _context.SaveChanges();

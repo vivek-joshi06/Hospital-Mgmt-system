@@ -1,11 +1,13 @@
 using HMS_Backend.Common;
 using HMS_Backend.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HMS_Backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class DahbardController : ControllerBase
     {
         private readonly AppDbContext _context;

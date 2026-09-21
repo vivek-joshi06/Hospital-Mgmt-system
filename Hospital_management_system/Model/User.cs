@@ -23,6 +23,8 @@ namespace HMS_Backend.Models
         [Required]
         public string Role { get; set; } = string.Empty;
 
+        public string Department { get; set; } = string.Empty;
+
         public bool IsActive { get; set; } = true;
 
         public DateTime Created { get; set; } = DateTime.Now;

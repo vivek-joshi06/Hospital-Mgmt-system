@@ -142,6 +142,7 @@ builder.Services.AddOpenApi(options =>
     options.AddDocumentTransformer((document, context, cancellationToken) =>
     {
         document.Components ??= new();
+       document.Components.SecuritySchemes ??= new Dictionary<string, IOpenApiSecurityScheme>();
         document.Components.SecuritySchemes.Add("Bearer", new OpenApiSecurityScheme
         {
             Type = SecuritySchemeType.Http,
@@ -301,22 +302,107 @@ app.MapControllers();
 
 ---
 
-## Step 9: Test the Full Flow in Scalar
+## Step 10: Add Role-Based Authentication
 
-**1️⃣ Generate the token — `POST /api/User/login`**
+Only 3 Changes are Required
 
-<img width="1760" height="831" alt="image" src="https://github.com/user-attachments/assets/d04c706f-9ac1-428e-9d9c-e1cf7b95c9c9" />
+**1️⃣ Services/TokenService.cs**
 
-**2️⃣ Call the protected endpoint with the correct token**
+```csharp
+ var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                new Claim(ClaimTypes.Role, user.UserType.UserTypeName) // 👈 Only new line
 
-<img width="1768" height="852" alt="image" src="https://github.com/user-attachments/assets/ff864855-ebeb-45ce-85d7-db69a7aa4961" />
+            };
+```
 
+**2️⃣ UserController.cs**
 
-**3️⃣ Call the protected endpoint with a wrong/missing token**
+```csharp
+var user = await _context.Users.Include(u => u.UserType) // 👈 Only new part
+                               .SingleOrDefaultAsync(u =>
+                               u.Email == dto.Email &&
+                               u.Password == dto.Password);
+```
 
-<img width="1749" height="846" alt="image" src="https://github.com/user-attachments/assets/40800cb0-872c-495b-852d-ea08f02e29cd" />
+**3️⃣ UserController.cs**
 
+```csharp
+[Authorize(Roles = "Admin")] // 👈 Only new attribute
+[HttpGet]
+public async Task<IActionResult> GetAllForAdmin()
+{
+    var user = await _context.Users.ToListAsync();
+    return Ok(user);
+}
+```
 
-```bash
-dotnet run
+## Step 10: Policy Based Authentication
+
+**Role-Based = "Are you an Admin?" → Yes/No (that's it)**
+
+**Policy-Based = "Are you an Admin AND do you meet this extra condition?"**
+
+### 🔑 Example: Policy-Based Check (Admin Department)
+
+| Admin User | Role    | Department  |
+| ---------- | ------- | ----------- |
+| Admin A    | Admin   | Account     |
+| Admin C    | Admin   | Examination |
+| User D     | Faculty | DIET        |
+
+```csharp
+
+public IActionResult AdminPageForAccount()
+{
+    return Ok("Visible only to Admins with Account Department");
+}
+```
+
+**AdminPageForAccount() I want to Allow this Method Who have Department Account in a Admin**
+
+Only 2 Changes
+**1️⃣ Services/TokenService.cs**
+
+```csharp
+ var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                new Claim(ClaimTypes.Role, user.UserType.UserTypeName)
+                new Claim("Department", user.Department ?? "")  //Add Line
+            };
+```
+
+**2️⃣ Program.cs**
+
+```csharp
+  builder.Services.AddAuthorization(options =>
+ {
+    // Add a custom Authorization Policy named "AdminPageForAccount"
+    options.AddPolicy("AdminPageForAccount", policy =>
+    {
+        // 1. Check whether the logged-in user has the "Admin" role.
+        //    If the user is not an Admin, access is denied (403 Forbidden).
+        policy.RequireRole("Admin")
+
+            // 2. After the Role check passes, check the "Department" claim.
+            //    The Department claim must have the value "Account".
+            //    If not, access is denied (403 Forbidden).
+            .RequireClaim("Department", "Account");
+    });
+  });
+```
+
+**3️⃣ UserController.cs**
+
+```csharp
+[Authorize(Policy = "AdminPageForAccount")]
+[HttpGet]
+public IActionResult AdminPageForAccount()
+{
+    return Ok("Visible only to Admins with Account Department");
+}
 ```
