@@ -785,6 +785,26 @@
   },
   {
     "ContainingType": "HMS_Backend.Controllers.UserController",
+    "Method": "AdminAccountOnly",
+    "RelativePath": "api/User/admin-account",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMS_Backend.Controllers.UserController",
+    "Method": "GetAllForAdmin",
+    "RelativePath": "api/User/admin-only",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HMS_Backend.Controllers.UserController",
     "Method": "GetUsersDropdown",
     "RelativePath": "api/User/dropdown",
     "HttpMethod": "GET",

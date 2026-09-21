@@ -1214,6 +1214,30 @@
         }
       }
     },
+    "/api/User/admin-only": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/admin-account": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/User/{id}": {
       "get": {
         "tags": [
@@ -1889,6 +1913,9 @@
           "role": {
             "type": "string"
           },
+          "department": {
+            "type": "string"
+          },
           "isActive": {
             "type": "boolean"
           }
@@ -1913,6 +1940,9 @@
             "type": "string"
           },
           "role": {
+            "type": "string"
+          },
+          "department": {
             "type": "string"
           },
           "isActive": {

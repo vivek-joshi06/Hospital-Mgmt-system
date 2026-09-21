@@ -323,3 +323,4 @@ C:\sem 5\.net\Hospital-Mgmt-system\Hospital_management_system\obj\Debug\net10.0\
 C:\sem 5\.net\Hospital-Mgmt-system\Hospital_management_system\obj\Debug\net10.0\Hospital_management_system.genruntimeconfig.cache
 C:\sem 5\.net\Hospital-Mgmt-system\Hospital_management_system\obj\Debug\net10.0\ref\Hospital_management_system.dll
 C:\sem 5\.net\Hospital-Mgmt-system\Hospital_management_system\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\sem 5\.net\Hospital-Mgmt-system\Hospital_management_system\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
