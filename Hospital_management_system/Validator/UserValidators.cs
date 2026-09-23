@@ -68,9 +68,6 @@ namespace Hospital_management_system.Validator
 
             RuleFor(x => x.Password)
                 .NotEmpty().WithMessage("Password is required.");
-
-            RuleFor(x => x.Role)
-                .NotEmpty().WithMessage("Role is required.");
         }
     }
 

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital-mgmt-system\\hospital_management_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital-mgmt-system\\hospital_management_system\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital-mgmt-system\\hospital_management_system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital-mgmt-system\\hospital_management_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85BB1050-22AD-D7FF-C833-60C8FBD7469E}|Hospital_management_system.csproj|c:\\sem 5\\.net\\hospital-mgmt-system\\hospital_management_system\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,23 +77,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 106,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20260921054450_AddDepartmentToUser.cs",
-              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Migrations\\20260921054450_AddDepartmentToUser.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260921054450_AddDepartmentToUser.cs",
-              "ToolTip": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Migrations\\20260921054450_AddDepartmentToUser.cs",
-              "RelativeToolTip": "Migrations\\20260921054450_AddDepartmentToUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T05:44:50.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "JWT_Authentication.md",
               "DocumentMoniker": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\JWT_Authentication.md",
               "RelativeDocumentMoniker": "JWT_Authentication.md",
@@ -105,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AppointmentController.cs",
               "DocumentMoniker": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Controllers\\AppointmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
@@ -117,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DoctorController.cs",
               "DocumentMoniker": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Controllers\\DoctorController.cs",
               "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
@@ -129,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -137,12 +125,11 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AgIAAAEBAAAAAAAAAAAUwA4BAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T05:21:31.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-19T05:21:31.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -154,15 +141,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAACYAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-26T03:35:10.749Z"
+              "WhenOpened": "2026-08-26T03:35:10.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20260921054450_AddDepartmentToUser.cs",
+              "DocumentMoniker": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Migrations\\20260921054450_AddDepartmentToUser.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260921054450_AddDepartmentToUser.cs",
+              "ToolTip": "C:\\sem 5\\.net\\Hospital-Mgmt-system\\Hospital_management_system\\Migrations\\20260921054450_AddDepartmentToUser.cs",
+              "RelativeToolTip": "Migrations\\20260921054450_AddDepartmentToUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-21T05:44:50.4Z"
             },
             {
               "$type": "Document",

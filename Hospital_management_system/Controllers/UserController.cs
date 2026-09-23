@@ -285,15 +285,14 @@ namespace HMS_Backend.Controllers
 
                 var user = _context.Users.FirstOrDefault(u =>
                     (u.UserName.ToLower() == dto.UserName.ToLower() || u.Email.ToLower() == dto.UserName.ToLower()) &&
-                    u.Password == dto.Password &&
-                    (string.IsNullOrEmpty(dto.Role) || u.Role.ToLower() == dto.Role.ToLower()));
+                    u.Password == dto.Password);
 
                 if (user == null)
                 {
                     return Unauthorized(new ApiResponse<object>
                     {
                         Success = false,
-                        Message = "Invalid username, password, or role."
+                        Message = "Invalid username or password."
                     });
                 }
 
